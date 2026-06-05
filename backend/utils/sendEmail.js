@@ -1,30 +1,21 @@
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
+
+const resend = new Resend(
+  process.env.RESEND_API_KEY
+);
 
 const sendEmail = async ({
   name,
   email,
   message,
 }) => {
-  const transporter =
-    nodemailer.createTransport({
-      service: "gmail",
-
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
-    });
-
-  await transporter.sendMail({
-    from: process.env.EMAIL_USER,
-
-    to: process.env.EMAIL_USER,
-
-    subject:
-      "New Portfolio Contact Message",
+  await resend.emails.send({
+    from: "onboarding@resend.dev",
+    to: "khitthiri.mw@gmail.com",
+    subject: "New Portfolio Contact",
 
     html: `
-      <h2>New Contact Form Submission</h2>
+      <h2>New Contact Message</h2>
 
       <p><strong>Name:</strong> ${name}</p>
 
