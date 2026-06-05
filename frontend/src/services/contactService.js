@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API_URL =
-  "http://localhost:5000/api/contact";
+  "https://my-portfolio-u7mk.onrender.com/api/contact";
 
 export const sendMessage = async (
   formData
