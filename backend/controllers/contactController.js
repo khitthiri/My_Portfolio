@@ -17,11 +17,11 @@ export const sendMessage =
           message,
         });
 
-      await sendEmail({
-        name,
-        email,
-        message,
-      });
+      //await sendEmail({
+       // name,
+        //email,
+        //message,
+      //});
 
       res.status(201).json({
         message:
