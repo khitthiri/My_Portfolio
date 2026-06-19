@@ -1,5 +1,29 @@
 const projects = [
   {
+    title: "UniNet",
+    description:
+      "Performance Tracking System for University Students and Instructors, providing insights into academic progress and performance.",
+
+    image: "/uninet.png",
+
+    tech: [
+      "React",
+      "Tailwind",
+      "daisyUI",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+    ],
+
+    github:
+      "https://github.com/khitthiri/UniNet.git",
+
+    live:
+      "https://uninet-cyan.vercel.app",
+  },
+  
+  {
     title: "Fin-Sight",
     description:
       "Personal finance analyzer helping users track spending and financial insights.",
@@ -8,8 +32,17 @@ const projects = [
 
     tech: [
       "React",
+      "Tailwind",
+      "Recharts",
+      "Framer Motion",
+      "Node.js",
       "Express",
       "MongoDB",
+      "JWT",
+      "Python",
+      "Flask",
+      "scikit-learn",
+      "pandas",
     ],
 
     github:
